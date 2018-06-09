@@ -195,10 +195,10 @@ input[type=text], input[type=password] {
 .main-contant {
     /*background-color: #001230;*/
     background: linear-gradient(to bottom, #000a1c, #4d88ea);
-    padding: 102px 0;
+    padding: 50px 0;
 }
 .main-contant .services {
-    padding-bottom: 102px;
+    padding-bottom: 50px;
 }
 .services .s1 {
     background: #fff;
