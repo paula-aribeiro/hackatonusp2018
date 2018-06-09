@@ -68,14 +68,14 @@ header .container {
 }
 .navbar {
     border: 0;
-    height: 128px;
+    height: 100px;
     margin-bottom: 0;
     border-radius: 0;
     letter-spacing: 1px;
     font-size: 12px !important;
     font-family: Montserrat, sans-serif;
     transition: all 0.4s;
-    padding: 40px 0;
+    padding: 25px 0;
 }
 .navbar-default .navbar-nav>li>a {
     color: #363636;
@@ -85,7 +85,7 @@ header .container {
 .navbar-brand>img {
     display: block;
     padding: 0;
-    margin-top: -14px;
+    margin-top: 0px;
 }
 .navbar li {
     padding-left: 10px;
