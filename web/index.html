@@ -21,6 +21,7 @@
           <!-- Google Font and font-awesome -->
           <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,700" rel="stylesheet">
+          <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
           <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
           <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -189,22 +190,16 @@
        </div>
        <div class="collapse navbar-collapse" id="myNavbar">
          <ul class="nav navbar-nav navbar-right">
-          <li><input style="border-radius: 8%;" type="text" placeholder="Usuário" name="uname" required></li>
-          <li>  &nbsp &nbsp </li>
-          <li><input style="border-radius: 8%;" type="password" placeholder="Senha" name="psw" required></li>
-          <li>  &nbsp &nbsp </li>
-          <li> <button style="border-radius: 8%;" id="login-button" type="submit">Entrar</button> </li>
 
-<!--
-           <li><a class="active" href="index.html">home</a></li>
-           <li class="hidden-xs">/</li>
-           <li><a href="services.html">Services</a></li>
-           <li class="hidden-xs">/</li>
-           <li><a href="technologies.html">technologies</a></li>
-           <li class="hidden-xs">/</li>
-           <li><a href="portfolios.html">portfolio</a></li>
-           <li class="hidden-xs">/</li>
-           <li><a href="contact.html">contact</a></li>-->
+          <li><input id = "user"style="border-radius: 8%;" type="text" placeholder="Usuário" name="uname" required></li>
+          <li>  &nbsp &nbsp </li>
+          <li><input id = "pass" style="border-radius: 8%;" type="password" placeholder="Senha" name="psw" required></li>
+          <li>  &nbsp &nbsp </li>
+          <li id = "login" > <button style="border-radius: 8%;" id="login-button" type="button" class = "login">Entrar</button> </li>
+          <li>  &nbsp &nbsp </li>
+          <li><a href="" target="_blank"><span></span>Logout</a></li>
+
+
          </ul>
        </div>
      </div>
@@ -475,6 +470,7 @@
                     <div data-aos="fade-left" data-aos-duration="1500">
                        <h3>Dúvidas ou sugestões?</h3>
                        <div class="row" style="margin: 0 0px;">
+
                            <div class="form-group">
                               <input class="form-control1" type="text" name="usrname" placeholder="Nome" required/>
                                <input type="email" class="form-control2" placeholder="Email" name="email" required />
@@ -485,12 +481,15 @@
                            <div class="form-group">
                                <textarea required class="form-control" placeholder="Deixe sua mensagem"></textarea>
                            </div>
+
+
                            <div class="button">
                             <input type="submit" name="submit" value="Enviar" class="btn btn-primary"/>
                            </div>
+                           </form>
                         </div>
                     </div>
-                </form>
+
             </div>
         </div>
        <!-- Row-1 Ended -->
@@ -505,8 +504,8 @@
           <li><a href="index.html">home</a></li><li class="semicolon"></li>
           <!-- <li><a href="aluno.html">saiba mais</a></li> -->
       </ul>
-      <p>(C) 2018, All Rights REserved <span><a href="https://www.template.net/editable/websites" target="_blank">ATTItheme</a></span>. Designed by <span><a href="https://www.template.net/editable/websites" target="_blank">template.net</a></span></p>
       <a href="index.html"><img src="images/cronos_logo.png" alt="footer-logo"></a>
+      <br><br>
   </div>
 </footer>
 <!-- Footer Section Ended -->
@@ -516,6 +515,7 @@
     <!-- Javascript plugins -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/animate.js"></script>
+    <script src="js/jquery_j.js"></script>
 
     <script>
 

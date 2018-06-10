@@ -8,6 +8,17 @@ $(document).ready(function() {
         "PEF2504", "PEF2506", "PEF2508", "PEF2510", "PEF2512"
     ];
 
+
+    $( ".login" ).click(function() {
+
+             if ($("#user").val() == 8610203 && $("#pass").val() == 123456){
+               window.location.href = "./aluno.html";
+             }
+             else if ($("#user").val() == 123456 && $("#pass").val() == 123456){
+               window.location.href = "./prof_tabela.html";
+             }
+           });
+
     $("#botao_grade").click(function(event) {
         var yourArray = [];
         //alert( "Handler for .submit() called." );
