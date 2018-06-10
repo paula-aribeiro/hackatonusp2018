@@ -13,8 +13,11 @@ $(document).ready(function() {
       });
       $("#botao_dislike").click(function(event) {
             modal.style.display = "block";
-            confirm( "Respostas recebidas! Obrigado por contribuir com o Cronos!" );
         });
+      $("#botao_final").click(function(event) {
+            confirm( "Respostas recebidas! Obrigado por contribuir com o Cronos!" );
+            location.reload();
+          });
     $( ".login" ).click(function() {
 
              if ($("#user").val() == 8610203 && $("#pass").val() == 123456){
