@@ -1,26 +1,31 @@
 $(document).ready(function(){
 
+  var yourArray = [];
+  var materias_semestre = [
+"4320301","4320198","MAP2121","MAT2454","MAT2458","PCC2122","PME2100","PMT2100","PCC2301","4320404","MAT2456","PCC2200","PEA2290","PEF2201",
+"PHD2218","PRO2201","PTR2202","PCC2435","PCC2346","PCC2361","PEF2302","PEF2305","PHD2304","PRO2206","PTR2377","PEF2304","PRO2303","PTR2451",
+"PEF2405","PCC2410","PCC2436","PCC2466","PEF2404","PHD2412","PHD2415","300002","PTR2580 (E)","PCC2652 (E)","PEF3113 (E)","300021","302502",
+"PCC2507","PCC2510","PCC2521","PCC2527","PCC2540","PCC3506","PEF2502","PEF2504","PEF2506","PEF2508","PEF2510","PEF2512",]
+alert(materias)
+
   $( "#botao_grade" ).submit(function( event ) {
-    alert( "Handler for .submit() called." );
+    //alert( "Handler for .submit() called." );
+    $( ".vermelho" ).each(function() {
+      //alert($(this).text());
+      yourArray.push($(this).text());
+      });
+      alert(yourArray)
     });
 
 
     $(".celula_grade").click(function(){
-        $( ".vermelho" ).each(function() {
-          alert($(this).text());
-          });
-
         if($(this).hasClass( "vermelho")) {
-
           $(this).removeClass('vermelho');
-
         }
         else {
           $(this).addClass('vermelho');
         }
-
     });
-
 });
 
 
