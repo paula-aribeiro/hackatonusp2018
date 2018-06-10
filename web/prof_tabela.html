@@ -23,6 +23,9 @@
           <!-- Google Font and font-awesome -->
           <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,700" rel="stylesheet">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
           <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
           <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -103,7 +106,7 @@
           }
           .ui-widget-header {
               border: 1px solid #e78f08;
-              background: #f6a828 url(images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x;
+              background: #f6a828 url(https://uspdigital.usp.br/comumwebdev/libs/jqueryui/1.8.24/temas/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x;
               color: #ffffff;
               font-weight: bold;
           }
@@ -116,6 +119,14 @@
           border-width: 0.05px;
           border-color: grey;
           border-bottom: 0px;
+
+          }
+
+          .ultimo1{
+          border-style: solid;
+          border-width: 1px;
+          border-color: grey;
+
 
           }
           </style>
@@ -149,21 +160,7 @@
    </nav>
    <!-- Navbar section Ended -->
 </header>
-<!-- Header section Ended -->
 
-<!-- Jumbotron Section Start -->
-<!--<div class="jumbotron text-left">
-  <!-- conainer Start --
-   <div class="container">
-    <div class="banner-contant" data-aos="zoom-in-right" data-aos-duration="1000">
-       <h1 style="color:white">CRONOS</h1>
-       <h3 style="color:white">horários inteligentes</h3>
-       <a class=" btn btn-primary" href="about-us.html">saiba mais</a>
-    </div>
-   </div>
-  <!-- conainer Ended --
-</div>-->
-<!-- Jumbotron Section Ended -->
 
 <section class="main-contant">
   <!-- conainer Start -->
@@ -176,9 +173,6 @@
    <div class="container-fluid">
     <!-- Portfolio Gallery Grid Start-->
         <!-- Row-1 Start -->
-        <div class="row">
-             <h3 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"  data-aos-duration="1000">EVOLUÇÃO NO CURSO</h3>
-        </div>
       </div>
 
       <div class="ui-jqgrid-view" id="gview_tableGradeHoraria" style="width: 1027px;">
@@ -202,15 +196,7 @@
 						<th role="gridcell" class = "celula_grade" class="ui-first-th-ltr" style="height: 0px; width: 123px;"></th>
 						<th role="gridcell" class = "celula_grade" class="ui-first-th-ltr" style="height: 0px; width: 126px;"></th>
 					</tr>
-					<tr class="ui-jqgrid-labels jqg-second-row-header" role="rowheader">
-						<th role="columnheader" class="ui-state-default ui-th-column-header ui-th-ltr" colspan="2" style="height: 22px; border-top: 0px none;">Horário</th>
-						<th role="columnheader" class="ui-state-default ui-th-column-header ui-th-ltr" style="border-top: 0px none;"></th>
-						<th role="columnheader" class="ui-state-default ui-th-column-header ui-th-ltr" style="border-top: 0px none;"></th>
-						<th role="columnheader" class="ui-state-default ui-th-column-header ui-th-ltr" style="border-top: 0px none;"></th>
-						<th role="columnheader" class="ui-state-default ui-th-column-header ui-th-ltr" style="border-top: 0px none;"></th>
-						<th role="columnheader" class="ui-state-default ui-th-column-header ui-th-ltr" style="border-top: 0px none;"></th>
-						<th role="columnheader" class="ui-state-default ui-th-column-header ui-th-ltr" style="border-top: 0px none;"></th>
-					</tr>
+
 					<tr role="rowheader" class="ui-jqgrid-labels jqg-third-row-header">
 						<th id="tableGradeHoraria_horent" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="">
 							<span class="ui-jqgrid-resize ui-jqgrid-resize-ltr" style="cursor: col-resize;">&nbsp;</span>
@@ -399,24 +385,27 @@
 
 
 					<tr role="row" id="5" tabindex="-1" class="ui-widget-content jqgrow ui-row-ltr">
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="15:00" aria-describedby="tableGradeHoraria_horent">16:50</td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="18:30" aria-describedby="tableGradeHoraria_horsai">18:30</td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="PSI3571-2018101" aria-describedby="tableGradeHoraria_seg">
+						<td role="gridcell" class = "ultimo1" style="text-align:center;" title="15:00" aria-describedby="tableGradeHoraria_horent">16:50</td>
+						<td role="gridcell" class = "ultimo1" style="text-align:center;" title="18:30" aria-describedby="tableGradeHoraria_horsai">18:30</td>
+						<td role="gridcell" class = "ultimo1" style="text-align:center;" title="PSI3571-2018101" aria-describedby="tableGradeHoraria_seg">
 							<div onclick="mostraDisciplina(&quot;PSI3571&quot;)" style="cursor:pointer; margin: 5px; color:#658CCF">
 								<span class="PSI3571" name="2018101"></span>
 							</div>
 						</td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_ter"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_qua"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_qui"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_sex"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_sab"></td>
+						<td role="gridcell" class = "ultimo1" style="text-align:center; " aria-describedby="tableGradeHoraria_ter"></td>
+						<td role="gridcell" class = "ultimo1" style="text-align:center;" aria-describedby="tableGradeHoraria_qua"></td>
+						<td role="gridcell" class = "ultimo1" style="text-align:center;" aria-describedby="tableGradeHoraria_qui"></td>
+						<td role="gridcell" class = "ultimo1" style="text-align:center;" aria-describedby="tableGradeHoraria_sex"></td>
+						<td role="gridcell" class = "ultimo1" style="text-align:center;" aria-describedby="tableGradeHoraria_sab"></td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
+
 	</div>
+  <br><br>
 </div>
+
 </section>
 
 
