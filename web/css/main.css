@@ -283,8 +283,9 @@ input[type=text], input[type=password] {
     padding-bottom: 21px;
     font-size: 16px;
     cursor: pointer;
-    border-bottom-width: 2px;
-    border-bottom: 1px solid #bdbdbd;color: rgba(57, 181, 74, 0.58);
+    /* border-bottom-width: 2px;
+    border-bottom: 1px solid #bdbdbd; */
+    color: white;
 }
 .theme-section h4.collapsed {color: #fff;}
 .theme-section p {
@@ -293,8 +294,8 @@ input[type=text], input[type=password] {
 .theme-section .theme-contant a {
     text-decoration: none;
 }
-.theme-section h4:hover {
-    color: rgba(57, 181, 74, 0.5882352941176471);
+/* .theme-section h4:hover {
+    color: rgba(57, 181, 74, 0.5882352941176471); */
 }
 .theme-section .active {
     color: rgba(57, 181, 74, 0.5882352941176471);
@@ -361,12 +362,12 @@ input[type=text], input[type=password] {
 }
 
 .types .left h3 {
-    color: #fdbf00;
+    color: #6dcff6;
     font-size: 29.56px;
     padding-bottom: 10px;
 }
 .types .center h3 {
-    color: #eba7c5;
+    color: #6dcff6;
     font-size: 29.56px;
     padding-bottom: 10px;
 }
@@ -600,7 +601,7 @@ input[type=text], input[type=password] {
     margin-bottom: 0;
 }
 .contact-section .form.form  ::placeholder {
-    color: white;
+    color: #001230;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     opacity: 1;
