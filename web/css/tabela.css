@@ -1,0 +1,46 @@
+
+
+.celula_grade:hover  {
+color: blue;
+}
+
+.ui-state-default ui-th-column ui-th-ltr{
+border-style: solid;
+border-width: 1px;
+border-color: white;
+
+}
+
+.ui-jqgrid-sortable {
+text-align: center;
+background-color: #001230;
+color: white;
+border-style: solid;
+border-width: 0.1px;
+border-color: grey;
+border-bottom: 0px;
+}
+
+.celula_grade {
+border-style: solid;
+border-width: 0.05px;
+border-color: grey;
+border-bottom: 0px;
+
+}
+
+
+
+#grade_curricular {
+cursor: pointer;
+border-collapse: separate;
+}
+
+.vermelho {
+  background-color: #001230 !important;  
+  border-style: solid;
+  border-width: 0.05px;
+  border-color: grey;
+  border-bottom: 0px;
+
+}
