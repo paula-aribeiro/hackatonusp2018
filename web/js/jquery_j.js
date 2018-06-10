@@ -8,12 +8,12 @@ $(document).ready(function() {
         "PEF2504", "PEF2506", "PEF2508", "PEF2510", "PEF2512"
     ];
     $("#botao_like").click(function(event) {
-        confirm( "Escolher outra grade?" );
+        confirm( "Obrigado por contribuir com o Cronos! Gostaria de fazer outra grade?" );
         location.reload();
       });
       $("#botao_dislike").click(function(event) {
-          confirm( "aslidbj" );
-          $(".popup, .popup-content").addClass("active");
+            modal.style.display = "block";
+            confirm( "Respostas recebidas! Obrigado por contribuir com o Cronos!" );
         });
     $( ".login" ).click(function() {
 

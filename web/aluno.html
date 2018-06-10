@@ -135,6 +135,11 @@
          content: " ";
          height: 100%;
          }
+         #myModal2{
+         /* display: inline-block; */
+         vertical-align: middle;
+         display: none;
+         }
          .grade_horaria {
          width:800px;
          }
@@ -310,7 +315,7 @@
                           <button class="btn btn-success" style="margin-bottom: 15px" type="button" data-toggle="modal" data-dismiss="modal" data-target="#myModal">Gostei :) </button>
                        </form>
                        <form id="botao_dislike">
-                          <button class="btn btn-danger" type="button" data-toggle="modal" data-dismiss="modal" data-target="#myModal">Não Gostei :/ </button>
+                          <button class="btn btn-danger" type="button" data-toggle="modal" data-dismiss="modal" data-target="#myModal2">Não Gostei :/ </button>
                        </form>
                      </div>
 
@@ -320,6 +325,31 @@
                   </div>
                </div>
             </div>
+            <!--MODAL 1 FIM-->
+
+            <!-- Modal 2-->
+            <div class="modal fade" id="myModal2" role="dialog">
+               <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                     <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">O que você não gostou de sua grade?</h4>
+                     </div>
+                     <div class="modal-body">
+
+
+                     </div>
+
+                     <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-default"  data-dismiss="modal">Não Gostei</button> -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--MODAL 1 FIM-->
+
+
+
             <table data-aos="fade-up" data-aos-duration="1000" class="ui-jqgrid-htable" style="width:1005px; background-color: #eeee" role="grid" aria-labelledby="gbox_grade_curricular" cellspacing="0" cellpadding="0" border="0">
                <thead>
                   <tr class="ui-jqgrid-labels" role="rowheader">
