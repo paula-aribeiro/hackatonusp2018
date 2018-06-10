@@ -501,7 +501,7 @@ input[type=text], input[type=password] {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("../images/contact-image.jpg");
+    background-image: url("../images/imagem-depoimento.jpg");
 }
 .contact-section {
     padding-top: 60px;
@@ -512,7 +512,7 @@ input[type=text], input[type=password] {
     height: auto;
 }
 .contact-section .comments h3 {
-    color: black;
+    color: #001230;
     font-size: 33.56px;
     padding-bottom: 50px;
     letter-spacing: -3px;
@@ -540,7 +540,7 @@ input[type=text], input[type=password] {
 .contact-section .comments .comment1 .inner-text p,.comments .comment2 .inner-text p,.comments .comment3 .inner-text p {
     height: auto;
     font-size: 14px;
-    color: black;
+    color: #001230;
     line-height: 28px;
     padding-right: 66px;
 }
@@ -554,42 +554,43 @@ input[type=text], input[type=password] {
     margin-right: 42px;
     width: 45%;
     height: 65px;
-    color: white;
+    color: black;
     border: 0;
     font-size: 17px;
     border-radius: 0;
     padding: 25px 15px;
     margin-bottom: 50px;
-    background-color: black;
+    background-color: white;
 }
 .contact-section .form .form-control2 {
     width: 45%;
     height: 65px;
-    color: white;
+    color: black;
     border: 0;
     font-size: 17px;
     border-radius: 0;
     padding: 25px 15px;
     margin-bottom: 50px;
-    background-color: black;
+    background-color: white;
 }
 .contact-section .form {
     width: 50%;
     height: auto;
 }
 .contact-section .form h3 {
+    color: #001230;
     font-size: 33.56px;
     letter-spacing: -3px;
     margin-bottom: 56px;
 }
 .contact-section .form .form-control {
     height: 65px;
-    color: white;
+    color: black;
     font-size: 17px;
     border-radius: 0;
     padding: 25px 15px;
     margin-bottom: 50px;
-    background-color: black;
+    background-color: white;
 }
 .contact-section .form textarea.form-control {
     height: 196px;
