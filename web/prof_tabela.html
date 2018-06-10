@@ -36,13 +36,25 @@
           background-color: #eeeeee;
           }
 
+
+          .ui-jqgrid-view{
+            margin-left:auto;
+            margin-right:auto;
+
+          }
+
+          th {
+            text-align: center !important;
+          }
+
           .ui-jqgrid .ui-jqgrid-titlebar {
-              padding: .3em .2em .2em .3em !important;
-              position: relative !important;
-              border-left: 0px none !important;
-              border-right: 0px none !important;
-              border-top: 0px none !important;
+              padding: .3em .2em .2em .3em;
+              position: relative;
               height: 18px !important;
+              border-style: solid;
+              border-width: 1px !important;
+              border-color: grey !important;
+              border-bottom: 0px !important;
           }
           .ui-jqgrid .ui-jqgrid-titlebar {
               padding: .3em .2em .2em .3em;
@@ -50,18 +62,44 @@
               border-left: 0 none;
               border-right: 0 none;
               border-top: 0 none;
+              border-style: solid;
+              border-width: 0.1px;
+              border-color: grey;
+              border-bottom: 0px;
+          }
+
+          .ui-jqgrid-bdiv{
+            border-style: solid;
+            border-width: 1px !important;
+            border-color: grey !important;
+            border-bottom: 0px !important;
+          }
+
+          .ui-widget-content {
+            border-style: solid;
+            border-width: 1px !important;
+            border-color: grey !important;
+            border-bottom: 0px !important;
           }
           .ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
               -moz-border-radius-topright: 4px;
               -webkit-border-top-right-radius: 4px;
               -khtml-border-top-right-radius: 4px;
               border-top-right-radius: 4px;
+              border-style: solid;
+              border-width: 0.1px;
+              border-color: grey;
+              border-bottom: 0px;
           }
           .ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
               -moz-border-radius-topleft: 4px;
               -webkit-border-top-left-radius: 4px;
               -khtml-border-top-left-radius: 4px;
               border-top-left-radius: 4px;
+              border-style: solid;
+              border-width: 0.1px;
+              border-color: grey;
+              border-bottom: 0px;
           }
           .ui-widget-header {
               border: 1px solid #e78f08;
@@ -72,9 +110,13 @@
           .ui-helper-clearfix {
               zoom: 1;
           }
-          user agent stylesheet
-          div {
-              display: block;
+
+          .celula_grade {
+          border-style: solid;
+          border-width: 0.05px;
+          border-color: grey;
+          border-bottom: 0px;
+
           }
           </style>
 
@@ -151,14 +193,14 @@
 			<table class="ui-jqgrid-htable" style="width:1027px" role="grid" aria-labelledby="gbox_tableGradeHoraria" cellspacing="0" cellpadding="0" border="0">
 				<thead>
 					<tr role="row" aria-hidden="true" class="jqg-first-row-header" style="height: auto;">
-						<th role="gridcell" class="ui-first-th-ltr" style="height: 0px; width: 123px;"></th>
-						<th role="gridcell" class="ui-first-th-ltr" style="height: 0px; width: 123px;"></th>
-						<th role="gridcell" class="ui-first-th-ltr" style="height: 0px; width: 123px;"></th>
-						<th role="gridcell" class="ui-first-th-ltr" style="height: 0px; width: 123px;"></th>
-						<th role="gridcell" class="ui-first-th-ltr" style="height: 0px; width: 123px;"></th>
-						<th role="gridcell" class="ui-first-th-ltr" style="height: 0px; width: 123px;"></th>
-						<th role="gridcell" class="ui-first-th-ltr" style="height: 0px; width: 123px;"></th>
-						<th role="gridcell" class="ui-first-th-ltr" style="height: 0px; width: 126px;"></th>
+						<th role="gridcell" class = "celula_grade" class="ui-first-th-ltr" style="height: 0px; width: 123px;"></th>
+						<th role="gridcell" class = "celula_grade" class="ui-first-th-ltr" style="height: 0px; width: 123px;"></th>
+						<th role="gridcell" class = "celula_grade" class="ui-first-th-ltr" style="height: 0px; width: 123px;"></th>
+						<th role="gridcell" class = "celula_grade" class="ui-first-th-ltr" style="height: 0px; width: 123px;"></th>
+						<th role="gridcell" class = "celula_grade" class="ui-first-th-ltr" style="height: 0px; width: 123px;"></th>
+						<th role="gridcell" class = "celula_grade" class="ui-first-th-ltr" style="height: 0px; width: 123px;"></th>
+						<th role="gridcell" class = "celula_grade" class="ui-first-th-ltr" style="height: 0px; width: 123px;"></th>
+						<th role="gridcell" class = "celula_grade" class="ui-first-th-ltr" style="height: 0px; width: 126px;"></th>
 					</tr>
 					<tr class="ui-jqgrid-labels jqg-second-row-header" role="rowheader">
 						<th role="columnheader" class="ui-state-default ui-th-column-header ui-th-ltr" colspan="2" style="height: 22px; border-top: 0px none;">Horário</th>
@@ -253,88 +295,122 @@
 			<table id="tableGradeHoraria" class="ui-jqgrid-btable" cellpadding="0" cellspacing="0" tabindex="0" border="0" role="grid" aria-multiselectable="false" aria-labelledby="gbox_tableGradeHoraria" style="width: 1027px;">
 				<tbody>
 					<tr class="jqgfirstrow" role="row" style="height:auto">
-						<td role="gridcell" style="height:0px;width:123px;"></td>
-						<td role="gridcell" style="height:0px;width:123px;"></td>
-						<td role="gridcell" style="height:0px;width:123px;"></td>
-						<td role="gridcell" style="height:0px;width:123px;"></td>
-						<td role="gridcell" style="height:0px;width:123px;"></td>
-						<td role="gridcell" style="height:0px;width:123px;"></td>
-						<td role="gridcell" style="height:0px;width:123px;"></td>
-						<td role="gridcell" style="height:0px;width:126px;"></td>
+						<td role="gridcell" class = "celula_grade" style="height:0px;width:123px;"></td>
+						<td role="gridcell" class = "celula_grade" style="height:0px;width:123px;"></td>
+						<td role="gridcell" class = "celula_grade" style="height:0px;width:123px;"></td>
+						<td role="gridcell" class = "celula_grade" style="height:0px;width:123px;"></td>
+						<td role="gridcell" class = "celula_grade" style="height:0px;width:123px;"></td>
+						<td role="gridcell" class = "celula_grade" style="height:0px;width:123px;"></td>
+						<td role="gridcell" class = "celula_grade" style="height:0px;width:123px;"></td>
+						<td role="gridcell" class = "celula_grade" style="height:0px;width:126px;"></td>
 					</tr>
 					<tr role="row" id="1" tabindex="-1" class="ui-widget-content jqgrow ui-row-ltr">
-						<td role="gridcell" style="text-align:center;" title="07:30" aria-describedby="tableGradeHoraria_horent">07:30</td>
-						<td role="gridcell" style="text-align:center;" title="09:10" aria-describedby="tableGradeHoraria_horsai">09:10</td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_seg"></td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_ter"></td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_qua"></td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_qui"></td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_sex"></td>
-						<td role="gridcell" style="text-align:center;" title="PTC3530-2018102" aria-describedby="tableGradeHoraria_sab">
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="07:30" aria-describedby="tableGradeHoraria_horent">07:30</td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="09:10" aria-describedby="tableGradeHoraria_horsai">09:10</td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_seg"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_ter"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_qua"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_qui"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_sex"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="PTC3530-2018102" aria-describedby="tableGradeHoraria_sab">
 							<div onclick="mostraDisciplina(&quot;PTC3530&quot;)" style="cursor:pointer; margin: 5px; color:#666666">
-								<span class="PTC3530" name="2018102">PTC3530-2018102</span>
+								<span class="PTC3530" name="2018102"></span>
 							</div>
 						</td>
 					</tr>
-					<tr role="row" id="2" tabindex="-1" class="ui-widget-content jqgrow ui-row-ltr ui-priority-secondary">
-						<td role="gridcell" style="text-align:center;" title="10:00" aria-describedby="tableGradeHoraria_horent">10:00</td>
-						<td role="gridcell" style="text-align:center;" title="11:30" aria-describedby="tableGradeHoraria_horsai">11:30</td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_seg"></td>
-						<td role="gridcell" style="text-align:center;" title="PRG0001-2018102" aria-describedby="tableGradeHoraria_ter">
+
+          <tr role="row" id="16" tabindex="-1" class="ui-widget-content jqgrow ui-row-ltr">
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="09:10" aria-describedby="tableGradeHoraria_horent">9:20</td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="11:00" aria-describedby="tableGradeHoraria_horsai">11:00</td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_seg"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_ter"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_qua"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_qui"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_sex"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="PTC3530-2018102" aria-describedby="tableGradeHoraria_sab">
+							<div onclick="mostraDisciplina(&quot;PTC3530&quot;)" style="cursor:pointer; margin: 5px; color:#666666">
+								<span class="PTC3530" name="2018102"></span>
+							</div>
+						</td>
+					</tr>
+
+					<!-- <tr role="row" id="2" tabindex="-1" class="ui-widget-content jqgrow ui-row-ltr ui-priority-secondary">
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="10:00" aria-describedby="tableGradeHoraria_horent">10:00</td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="11:30" aria-describedby="tableGradeHoraria_horsai">11:30</td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_seg"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="PRG0001-2018102" aria-describedby="tableGradeHoraria_ter">
 							<div onclick="mostraDisciplina(&quot;PRG0001&quot;)" style="cursor:pointer; margin: 5px; color:#658CCF">
 								<span class="PRG0001" name="2018102">PRG0001-2018102</span>
 							</div>
 						</td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_qua"></td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_qui"></td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_sex"></td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_sab"></td>
-					</tr>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_qua"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_qui"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_sex"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_sab"></td>
+					</tr> -->
 					<tr role="row" id="3" tabindex="-1" class="ui-widget-content jqgrow ui-row-ltr">
-						<td role="gridcell" style="text-align:center;" title="11:10" aria-describedby="tableGradeHoraria_horent">11:10</td>
-						<td role="gridcell" style="text-align:center;" title="12:50" aria-describedby="tableGradeHoraria_horsai">12:50</td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_seg"></td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_ter"></td>
-						<td role="gridcell" style="text-align:center;" title="PTC3413-2018150" aria-describedby="tableGradeHoraria_qua">
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="11:00" aria-describedby="tableGradeHoraria_horent">11:10</td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="12:50" aria-describedby="tableGradeHoraria_horsai">12:50</td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_seg"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_ter"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="PTC3413-2018150" aria-describedby="tableGradeHoraria_qua">
 							<div onclick="mostraDisciplina(&quot;PTC3413&quot;)" style="cursor:pointer; margin: 5px; color:#658CCF">
-								<span class="PTC3413" name="2018150">PTC3413-2018150</span>
+								<span class="PTC3413" name="2018150"></span>
 							</div>
 						</td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_qui"></td>
-						<td role="gridcell" style="text-align:center;" title="PTC3413-2018150" aria-describedby="tableGradeHoraria_sex">
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_qui"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="PTC3413-2018150" aria-describedby="tableGradeHoraria_sex">
 							<div onclick="mostraDisciplina(&quot;PTC3413&quot;)" style="cursor:pointer; margin: 5px; color:#658CCF">
-								<span class="PTC3413" name="2018150">PTC3413-2018150</span>
+								<span class="PTC3413" name="2018150"></span>
 							</div>
 						</td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_sab"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_sab"></td>
 					</tr>
-					<tr role="row" id="4" tabindex="-1" class="ui-widget-content jqgrow ui-row-ltr ui-priority-secondary">
-						<td role="gridcell" style="text-align:center;" title="14:00" aria-describedby="tableGradeHoraria_horent">14:00</td>
-						<td role="gridcell" style="text-align:center;" title="17:40" aria-describedby="tableGradeHoraria_horsai">17:40</td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_seg"></td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_ter"></td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_qua"></td>
-						<td role="gridcell" style="text-align:center;" title="PTC3418-2018102" aria-describedby="tableGradeHoraria_qui">
+
+          <tr role="row" id="6" tabindex="-1" class="ui-widget-content jqgrow ui-row-ltr ui-priority-secondary">
+            <td role="gridcell" class = "celula_grade" style="text-align:center;" title="13:00" aria-describedby="tableGradeHoraria_horent">13:10</td>
+            <td role="gridcell" class = "celula_grade" style="text-align:center;" title="14:40" aria-describedby="tableGradeHoraria_horsai">14:50</td>
+            <td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_seg"></td>
+            <td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_ter"></td>
+            <td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_qua"></td>
+            <td role="gridcell" class = "celula_grade" style="text-align:center;" title="PTC3418-2018102" aria-describedby="tableGradeHoraria_qui">
+              <div onclick="mostraDisciplina(&quot;PTC3418&quot;)" style="cursor:pointer; margin: 5px; color:#666666">
+                <span class="PTC3418" name="2018102"></span>
+              </div>
+            </td>
+            <td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_sex"></td>
+            <td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_sab"></td>
+          </tr>
+
+          <tr role="row" id="4" tabindex="-1" class="ui-widget-content jqgrow ui-row-ltr ui-priority-secondary">
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="14:00" aria-describedby="tableGradeHoraria_horent">15:00</td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="17:40" aria-describedby="tableGradeHoraria_horsai">16:40</td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_seg"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_ter"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_qua"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="PTC3418-2018102" aria-describedby="tableGradeHoraria_qui">
 							<div onclick="mostraDisciplina(&quot;PTC3418&quot;)" style="cursor:pointer; margin: 5px; color:#666666">
-								<span class="PTC3418" name="2018102">PTC3418-2018102</span>
+								<span class="PTC3418" name="2018102"></span>
 							</div>
 						</td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_sex"></td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_sab"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_sex"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_sab"></td>
 					</tr>
+
+
 					<tr role="row" id="5" tabindex="-1" class="ui-widget-content jqgrow ui-row-ltr">
-						<td role="gridcell" style="text-align:center;" title="15:00" aria-describedby="tableGradeHoraria_horent">15:00</td>
-						<td role="gridcell" style="text-align:center;" title="18:30" aria-describedby="tableGradeHoraria_horsai">18:30</td>
-						<td role="gridcell" style="text-align:center;" title="PSI3571-2018101" aria-describedby="tableGradeHoraria_seg">
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="15:00" aria-describedby="tableGradeHoraria_horent">16:50</td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="18:30" aria-describedby="tableGradeHoraria_horsai">18:30</td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="PSI3571-2018101" aria-describedby="tableGradeHoraria_seg">
 							<div onclick="mostraDisciplina(&quot;PSI3571&quot;)" style="cursor:pointer; margin: 5px; color:#658CCF">
-								<span class="PSI3571" name="2018101">PSI3571-2018101</span>
+								<span class="PSI3571" name="2018101"></span>
 							</div>
 						</td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_ter"></td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_qua"></td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_qui"></td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_sex"></td>
-						<td role="gridcell" style="text-align:center;" aria-describedby="tableGradeHoraria_sab"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_ter"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_qua"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_qui"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_sex"></td>
+						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_sab"></td>
 					</tr>
 				</tbody>
 			</table>
