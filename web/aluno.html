@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Cronos">
+    <meta name="keywords" content="HTML,CSS,JavaScript,jquery">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+          <title>Cronos</title>
+
+          <!-- Bootstrap CSS,Animate CSS : Stylesheets -->
+          <link href="css/animate.css" rel="stylesheet">
+          <link href="css/bootstrap.min.css" rel="stylesheet">
+          <!-- Custom CSS:Own Styles -->
+          <link href="css/main.css" rel="stylesheet">
+
+          <!--<link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+-->
+
+          <!-- Google Font and font-awesome -->
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,700" rel="stylesheet">
+
+          <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+          <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+          <!--[if lt IE 9]>
+
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+          <style type="text/css">
+          /* FontAwesome for working BootSnippet :> */
+
+        @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+        #team {
+        background: #eee !important;
+        }
+
+        .btn-primary:hover,
+        .btn-primary:focus {
+        background-color: #108d6f;
+        border-color: #108d6f;
+        box-shadow: none;
+        outline: none;
+        }
+
+        .btn-primary {
+        color: #fff;
+        background-color: #007b5e;
+        border-color: #007b5e;
+        }
+
+        section {
+        padding: 60px 0;
+        background-color: #ffffff ;
+        }
+
+        section .section-title {
+        text-align: center;
+        color: #007b5e;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        }
+
+        #team .card {
+        border: none;
+        }
+
+        .btn-primary:active .backside,
+        .image-flip.hover .backside {
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        border-radius: .25rem;
+        }
+
+        .btn-primary:active .frontside,
+        .image-flip.hover .frontside {
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        }
+
+        .mainflip {
+        -webkit-transition: 1s;
+        -webkit-transform-style: preserve-3d;
+        -ms-transition: 1s;
+        -moz-transition: 1s;
+        -moz-transform: perspective(1000px);
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transition: 1s;
+        transform-style: preserve-3d;
+        position: relative;
+        }
+
+        .frontside {
+        position: relative;
+        -webkit-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        z-index: 2;
+        margin-bottom: 30px;
+        }
+
+        .backside {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: white;
+        -webkit-transform: rotateY(-180deg);
+        -moz-transform: rotateY(-180deg);
+        -o-transform: rotateY(-180deg);
+        -ms-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+        -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+        -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+        box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+        }
+
+        .frontside,
+        .backside {
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transition: 1s;
+        -webkit-transform-style: preserve-3d;
+        -moz-transition: 1s;
+        -moz-transform-style: preserve-3d;
+        -o-transition: 1s;
+        -o-transform-style: preserve-3d;
+        -ms-transition: 1s;
+        -ms-transform-style: preserve-3d;
+        transition: 1s;
+        transform-style: preserve-3d;
+        }
+
+        .frontside .card,
+        .backside .card {
+        min-height: 512px;
+        }
+
+        .backside .card,
+        .frontside .card {
+        font-size: 18px;
+        color: #007b5e !important;
+        }
+
+        .frontside .card .card-title,
+        .backside .card .card-title {
+        color: #007b5e !important;
+        }
+
+        .frontside .card .card-body,
+        .backside  {
+        width: 600px;
+        height: 500px;
+        border-radius: 50%;
+        }
+          </style>
+
+
+  </head>
+
+<!-- Body section Start-->
+<body>
+
+
+<!-- Header section Start -->
+<header id="js-header">
+   <!-- Navbar section Start -->
+   <nav class="navbar navbar-default navbar-fixed-top">
+    <!-- conainer Start-->
+     <div class="container">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+           <span class="fa fa-align-left" style="font-size: 16px;"></span>
+         </button>
+         <a class="navbar-brand" href="index.html"><img src="images/cronos_logo.png" alt="logo"></a>
+       </div>
+       <div class="collapse navbar-collapse" id="myNavbar">
+         <ul class="nav navbar-nav navbar-right">
+          <li> <button id="login-button" type="submit">Bem vindo! @Aluno x</button> </li>
+
+         </ul>
+       </div>
+     </div>
+    <!-- conainer Ended-->
+   </nav>
+   <!-- Navbar section Ended -->
+</header>
+<!-- Header section Ended -->
+
+<!-- Jumbotron Section Start -->
+<!--<div class="jumbotron text-left">
+  <!-- conainer Start --
+   <div class="container">
+    <div class="banner-contant" data-aos="zoom-in-right" data-aos-duration="1000">
+       <h1 style="color:white">CRONOS</h1>
+       <h3 style="color:white">horários inteligentes</h3>
+       <a class=" btn btn-primary" href="about-us.html">saiba mais</a>
+    </div>
+   </div>
+  <!-- conainer Ended --
+</div>-->
+<!-- Jumbotron Section Ended -->
+
+<section class="main-contant">
+  <!-- conainer Start -->
+   <div class="container">
+      <!-- Row-1 Start -->
+       <div class="row services">
+
+       </div>
+       <!-- Row-1 Ended -->
+
+       <!-- Row-2 Start -->
+       <div class="row theme-section">
+           <div class="col-sm-12 col-md-6">
+             <div class="theme-contant" data-aos="fade-right" data-aos-duration="1000">
+             <h3>É fácil descomplicar sua grade horária!</h3>
+               <div class="panel-group" id="accordion">
+                 <div class="panel panel-default">
+                   <div class="panel-heading">
+                     <h4 class="panel-title collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                     <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                       Interativo!
+                     </h4>
+                   </div>
+                   <div id="collapse1" class="panel-collapse collapse">
+                     <div class="panel-body">Adptado para você!</div>
+                   </div>
+                 </div>
+                 <div class="panel panel-default">
+                   <div class="panel-heading">
+                     <h4 class="panel-title collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" >
+                     <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                       Unificado!
+                     </h4>
+                   </div>
+                   <div id="collapse2" class="panel-collapse collapse">
+                     <div class="panel-body">Sua grade pessoal já integrada ao sistema Jupiter</div>
+                   </div>
+                 </div>
+                 <div class="panel panel-default">
+                   <div class="panel-heading">
+                     <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapse3" >
+                     <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                      <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                       Simples!
+                     </h4>
+                   </div>
+                   <div id="collapse3" class="panel-collapse collapse in">
+                     <div class="panel-body last">Basta selecionar quais disciplinas quer cursar! E avaliar as possíveis grades geradas para você</div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="col-sm-12 col-md-6 image">
+             <div class="thmeme-image" data-aos="fade-left" data-aos-duration="1000">
+                 <img src="images/aluno_cronograma.jpg" style="width: 100%; height:110%" alt="Image">
+             </div>
+           </div>
+       </div>
+       <!-- Row-2 Ended -->
+
+<!-- conainer Ended -->
+</section>
+
+<section class="portfolio">
+   <div class="container-fluid">
+    <!-- Portfolio Gallery Grid Start-->
+        <!-- Row-1 Start -->
+        <div class="row">
+             <h3 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"  data-aos-duration="1000">EVOLUÇÃO NO CURSO</h3>
+        </div>
+      </div>
+</section>
+
+<!-- Portfolio Section Start-->
+        <!-- Adicionar Grade - INICIO-->
+        <section id="team" class="pb-5">
+            <div class="container">
+                <h5 class="section-title h1">opções de grades</h5>
+                    <!-- Team member -->
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="image-flip" onclick="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p>
+                                            <h4 class="card-title">Sunlimetech</h4>
+                                            <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                            <b class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></b>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="card-title">Quais suas insatisfações com a grade?</h4>
+                                            <form action="/action_page.php">
+                                                <input type="checkbox" name="vehicle" value="Bike"> Grade possui janelas<br>
+                                                <input type="checkbox" name="vehicle" value="Car" checked> Conflito com estágio<br>
+                                                <input type="submit" value="Enviar">
+                                              </form>
+                                          <!--<p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Team member -->
+
+
+                </div>
+
+        </section>
+
+
+        <!-- Grade - FIM -->
+
+    <!-- END MAIN -->
+
+<!-- Portfolio Section Ended -->
+
+
+
+
+<!-- Footer Section Start -->
+<footer class="container-fluid bg-4 text-center">
+      <p>(C) 2018, All Rights REserved <span><a href="https://www.template.net/editable/websites" target="_blank">ATTItheme</a></span>. Designed by <span><a href="https://www.template.net/editable/websites" target="_blank">template.net</a></span></p>
+      <a href="index.html"><img src="images/cronos_logo.png" alt="footer-logo"></a>
+  </div>
+</footer>
+<!-- Footer Section Ended -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Javascript plugins -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/animate.js"></script>
+
+    <script>
+
+    // Animate onscroll
+    $(document).ready(function () {
+    if (screen.width > 1024) {
+    AOS.init({
+    easing: 'ease-in-out-sine',
+    });
+    }
+    });
+
+    // OnScroll
+    function resizeHeaderOnScroll() {
+      const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+      shrinkOn = 00,
+      headerEl = document.getElementById('js-header');
+
+      if (distanceY > shrinkOn) {
+        headerEl.classList.add("smaller");
+      } else {
+        headerEl.classList.remove("smaller");
+      }
+    }
+
+    window.addEventListener('scroll', resizeHeaderOnScroll);
+    </script>
+
+  </body>
+</html>
