@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+  $( "#botao_grade" ).submit(function( event ) {
+    alert( "Handler for .submit() called." );
+    });
+
+
     $(".celula_grade").click(function(){
         $( ".vermelho" ).each(function() {
           alert($(this).text());
@@ -13,11 +18,6 @@ $(document).ready(function(){
         else {
           $(this).addClass('vermelho');
         }
-
-        $("#form_finaliza").submit(function(event) {
-                       
-                   });
-
 
     });
 
