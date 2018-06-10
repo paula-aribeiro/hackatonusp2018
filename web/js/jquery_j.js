@@ -6,16 +6,89 @@ $(document).ready(function(){
   "PRO2206","PTR2377","PEF2304","PRO2303","PTR2451","PEF2405","PCC2410","PCC2436","PCC2466","PEF2404","PHD2412","PHD2415","300002",
   "PTR2580 (E)","PCC2652 (E)","PEF3113 (E)","300021","302502","PCC2507","PCC2510","PCC2521","PCC2527","PCC2540","PCC3506","PEF2502",
   "PEF2504","PEF2506","PEF2508","PEF2510","PEF2512"];
-  var materias = [4,4,4,4,4,2,4,4,2,2,4,2,2,2,2,4,2,4,2,2,4,2,4,4,4,2,4,2,2,4,2,2,4,4,4,4,2,4,2,4,2,4,2,4,4,4,4,2,4,4];
-  //alert($.inArray("PEF2512",materias));
 
   $( "#botao_grade" ).click(function( event ) {
     //alert( "Handler for .submit() called." );
     $( ".vermelho" ).each(function() {
       //alert($(this).text());
+      var discip = $(this).text();
       yourArray.push($(this).text());
+
+      if (0 <= $.inArray($(this).text(),materias) <= 4){
+        if ($("#1").text() == "") {
+          $("#1").html($(this).text());
+        }
+        else if (($("#7").text() == "")) {
+          $("#7").html($(this).text());
+        }
+      }
+      else if (5 <= $.inArray($(this).text(),materias) <= 9){
+        if ($("#2").text() == "") {
+          $("#2").html($(this).text());
+        }
+        else if (($("#8").text() == "")) {
+          $("#8").html($(this).text());
+        }
+
+      }
+      else if (10 <= $.inArray($(this).text(),materias) <= 14){
+        if ($("#1").text() == "") {
+          $("#1").html($(this).text());
+        }
+        else if (($("#7").text() == "")) {
+          $("#7").html($(this).text());
+        }
+
+      }
+      else if (15 <= $.inArray($(this).text(),materias) <= 19){
+        if ($("#1").text() == "") {
+          $("#1").html($(this).text());
+        }
+        else if (($("#7").text() == "")) {
+          $("#7").html($(this).text());
+        }
+
+      }
+      else if (20 <= $.inArray($(this).text(),materias) <= 24){
+        if ($("#1").text() == "") {
+          $("#1").html($(this).text());
+        }
+        else if (($("#7").text() == "")) {
+          $("#7").html($(this).text());
+        }
+
+      }
+      else if (25 <= $.inArray($(this).text(),materias) <= 29){
+        if ($("#1").text() == "") {
+          $("#1").html($(this).text());
+        }
+        else if (($("#7").text() == "")) {
+          $("#7").html($(this).text());
+        }
+
+      }
+      else if (30 <= $.inArray($(this).text(),materias) <= 34){
+        if ($("#1").text() == "") {
+          $("#1").html($(this).text());
+        }
+        else if (($("#7").text() == "")) {
+          $("#7").html($(this).text());
+        }
+
+      }
+      else if (35 <= $.inArray($(this).text(),materias) <= 39){
+        if ($("#1").text() == "") {
+          $("#1").html($(this).text());
+        }
+        else if (($("#7").text() == "")) {
+          $("#7").html($(this).text());
+        }
+
+      }
+
+      //alert($(this).text());
       });
-      alert(yourArray)
+        //alert(yourArray)
     });
 
 
