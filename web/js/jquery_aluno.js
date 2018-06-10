@@ -1,10 +1,11 @@
 $(document).ready(function() {
 
-
     $("#botao_like").click(function(event) {
         var yourArray = [];
         confirm( "Escolher outra grade?" );
         location.reload();
+      }
+
         $(".vermelho").each(function() {
 
             yourArray.push($(this).text());
@@ -197,13 +198,12 @@ $(document).ready(function() {
             }
 
 
-
-
             //alert($(this).text());
         });
         //alert(yourArray)
 
     });
+
 
 
     $(".celula_grade").click(function() {
@@ -213,6 +213,7 @@ $(document).ready(function() {
             $(this).addClass('vermelho');
         }
     });
+
 });
 
 

@@ -7,8 +7,14 @@ $(document).ready(function() {
         "PTR2580 (E)", "PCC2652 (E)", "PEF3113 (E)", "300021", "302502", "PCC2507", "PCC2510", "PCC2521", "PCC2527", "PCC2540", "PCC3506", "PEF2502",
         "PEF2504", "PEF2506", "PEF2508", "PEF2510", "PEF2512"
     ];
-
-
+    $("#botao_like").click(function(event) {
+        confirm( "Escolher outra grade?" );
+        location.reload();
+      });
+      $("#botao_dislike").click(function(event) {
+          confirm( "aslidbj" );
+          $(".popup, .popup-content").addClass("active");
+        });
     $( ".login" ).click(function() {
 
              if ($("#user").val() == 8610203 && $("#pass").val() == 123456){
