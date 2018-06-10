@@ -9,15 +9,12 @@ $(document).ready(function() {
     ];
 
     $("#botao_grade").click(function(event) {
-        $(".").each(function() {
-
-        };
         var yourArray = [];
         //alert( "Handler for .submit() called." );
         $(".vermelho").each(function() {
 
             yourArray.push($(this).text());
-            alert($.inArray($(this).text(), materias) > 4);
+
 
             if (0 <= $.inArray($(this).text(), materias) && $.inArray($(this).text(), materias)  <= 4) {
                 if ($("#1").text() == "") {
@@ -211,6 +208,7 @@ $(document).ready(function() {
             //alert($(this).text());
         });
         //alert(yourArray)
+
     });
 
 
