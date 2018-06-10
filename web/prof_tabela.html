@@ -1,464 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-   <!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Cronos">
-    <meta name="keywords" content="HTML,CSS,JavaScript,jquery">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-          <title>Cronos</title>
-
-          <!-- Bootstrap CSS,Animate CSS : Stylesheets -->
-          <link href="css/animate.css" rel="stylesheet">
-          <link href="css/bootstrap.min.css" rel="stylesheet">
-          <!-- Custom CSS:Own Styles -->
-          <link href="css/main.css" rel="stylesheet">
-
-          <!--<link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
--->
-
-          <!-- Google Font and font-awesome -->
-          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-          <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,700" rel="stylesheet">
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
-          <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-          <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-          <!--[if lt IE 9]>
-
-            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-          <![endif]-->
-          <style type="text/css">
-          .prof_horario {
-          background-color: #eeeeee;
-          }
-
-
-          .ui-jqgrid-view{
-            margin-left:auto;
-            margin-right:auto;
-
-          }
-
-          th {
-            text-align: center !important;
-          }
-
-          .ui-jqgrid .ui-jqgrid-titlebar {
-              padding: .3em .2em .2em .3em;
-              position: relative;
-              height: 18px !important;
-              border-style: solid;
-              border-width: 1px !important;
-              border-color: grey !important;
-              border-bottom: 0px !important;
-          }
-          .ui-jqgrid .ui-jqgrid-titlebar {
-              padding: .3em .2em .2em .3em;
-              position: relative;
-              border-left: 0 none;
-              border-right: 0 none;
-              border-top: 0 none;
-              border-style: solid;
-              border-width: 0.1px;
-              border-color: grey;
-              border-bottom: 0px;
-          }
-
-          .ui-jqgrid-bdiv{
-            border-style: solid;
-            border-width: 1px !important;
-            border-color: grey !important;
-            border-bottom: 0px !important;
-          }
-
-          .ui-widget-content {
-            border-style: solid;
-            border-width: 1px !important;
-            border-color: grey !important;
-            border-bottom: 0px !important;
-          }
-          .ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
-              -moz-border-radius-topright: 4px;
-              -webkit-border-top-right-radius: 4px;
-              -khtml-border-top-right-radius: 4px;
-              border-top-right-radius: 4px;
-              border-style: solid;
-              border-width: 0.1px;
-              border-color: grey;
-              border-bottom: 0px;
-          }
-          .ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
-              -moz-border-radius-topleft: 4px;
-              -webkit-border-top-left-radius: 4px;
-              -khtml-border-top-left-radius: 4px;
-              border-top-left-radius: 4px;
-              border-style: solid;
-              border-width: 0.1px;
-              border-color: grey;
-              border-bottom: 0px;
-          }
-          .ui-widget-header {
-              border: 1px solid #e78f08;
-              background: #f6a828 url(https://uspdigital.usp.br/comumwebdev/libs/jqueryui/1.8.24/temas/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x;
-              color: #ffffff;
-              font-weight: bold;
-          }
-          .ui-helper-clearfix {
-              zoom: 1;
-          }
-
-          .celula_grade {
-          border-style: solid;
-          border-width: 0.05px;
-          border-color: grey;
-          border-bottom: 0px;
-
-          }
-
-          .ultimo1{
-          border-style: solid;
-          border-width: 1px;
-          border-color: grey;
-
-
-          }
-          </style>
-
-  </head>
-
-<!-- Body section Start-->
-<body>
-
-
-<!-- Header section Start -->
-<header id="js-header">
-   <!-- Navbar section Start -->
-   <nav class="navbar navbar-default navbar-fixed-top">
-    <!-- conainer Start-->
-     <div class="container">
-       <div class="navbar-header">
-         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-           <span class="fa fa-align-left" style="font-size: 16px;"></span>
-         </button>
-         <a class="navbar-brand" href="index.html"><img src="images/cronos_logo.png" alt="logo"></a>
+   <head>
+      <!-- Meta Tags -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="Cronos">
+      <meta name="keywords" content="HTML,CSS,JavaScript,jquery">
+      <meta name="author" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Professor</title>
+      <!-- Bootstrap CSS,Animate CSS : Stylesheets -->
+      <link href="css/animate.css" rel="stylesheet">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom CSS:Own Styles -->
+      <link href="css/main.css" rel="stylesheet">
+      <!--<link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+         -->
+      <!-- Google Font and font-awesome -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,700" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <style type="text/css">
+         .prof_horario {
+         background-color: #eeeeee;
+         }
+         .ui-jqgrid-view{
+         margin-left:auto;
+         margin-right:auto;
+         }
+         th {
+         text-align: center !important;
+         }
+         .ui-jqgrid .ui-jqgrid-titlebar {
+         padding: .3em .2em .2em .3em;
+         position: relative;
+         height: 18px !important;
+         border-style: solid;
+         border-width: 1px !important;
+         border-color: grey !important;
+         border-bottom: 0px !important;
+         }
+         .tabela_grade td{
+         padding: .3em .2em .2em .3em;
+         position: relative;
+         border-left: 0 none;
+         border-right: 0 none;
+         border-top: 0 none;
+         border-style: solid;
+         border-width: 0.1px;
+         border-color: grey;
+         border-bottom: 0px;
+         width: auto;
+         }
+         .tabela_grade th{
+         padding: .3em .2em .2em .3em;
+         position: relative;
+         border-left: 0 none;
+         border-right: 0 none;
+         border-top: 0 none;
+         border-style: solid;
+         border-width: 0.1px;
+         border-color: grey;
+         border-bottom: 0px;
+         width: auto;
+         }
+         .ui-jqgrid-bdiv{
+         border-style: solid;
+         border-width: 1px !important;
+         border-color: grey !important;
+         border-bottom: 0px !important;
+         }
+         .ui-widget-content {
+         border-style: solid;
+         border-width: 1px !important;
+         border-color: grey !important;
+         border-bottom: 0px !important;
+         }
+         .ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+         -moz-border-radius-topright: 4px;
+         -webkit-border-top-right-radius: 4px;
+         -khtml-border-top-right-radius: 4px;
+         border-top-right-radius: 4px;
+         border-style: solid;
+         border-width: 0.1px;
+         border-color: grey;
+         border-bottom: 0px;
+         }
+         .ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+         -moz-border-radius-topleft: 4px;
+         -webkit-border-top-left-radius: 4px;
+         -khtml-border-top-left-radius: 4px;
+         border-top-left-radius: 4px;
+         border-style: solid;
+         border-width: 0.1px;
+         border-color: grey;
+         border-bottom: 0px;
+         }
+         .ui-widget-header {
+         border: 1px solid #e78f08;
+         background: #f6a828 url(https://uspdigital.usp.br/comumwebdev/libs/jqueryui/1.8.24/temas/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x;
+         color: #ffffff;
+         font-weight: bold;
+         }
+         .ui-helper-clearfix {
+         zoom: 1;
+         }
+         .celula_grade {
+         border-style: solid;
+         border-width: 0.05px;
+         border-color: grey;
+         border-bottom: 0px;
+         }
+         .ultimo1{
+         border-style: solid;
+         border-width: 1px;
+         border-color: grey;
+         }
+         #myModal{
+         /* display: inline-block; */
+         vertical-align: middle;
+         content: " ";
+         height: 100%;
+         }
+         .grade_horaria {
+         width:800px;
+         }
+         .tabela_grade {
+         margin-left: auto;
+         margin-right: auto;
+         border-style: solid;
+         border-width: 1px;
+         border-color: grey;
+         }
+         .buttonHolder{ text-align: center; }
+      </style>
+   </head>
+   <!-- Body section Start-->
+   <body>
+      <!-- Header section Start -->
+      <header id="js-header">
+         <!-- Navbar section Start -->
+         <nav class="navbar navbar-default navbar-fixed-top">
+            <!-- conainer Start-->
+            <div class="container">
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="fa fa-align-left" style="font-size: 16px;"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html"><img src="images/cronos_logo.png" alt="logo"></a>
+               </div>
+               <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav navbar-right">
+                     <li> <button id="login-button" type="submit">Bem vindo! @Professor x</button> </li>
+                  </ul>
+               </div>
+            </div>
+            <!-- conainer Ended-->
+         </nav>
+         <!-- Navbar section Ended -->
+      </header>
+      <section class="main-contant">
+        <div class="container" style="padding-top: 150px;">
+           <div class="types">
+            <div class="col-xs-12 col-sm-4 col-md-4" data-aos="zoom-in-up" data-aos-duration="500">
+               <div class="left">
+                    <h3>Passo 1</h3>
+                    <p>A partir do gráfico da sua evolução do curso, selecione as matérias que deseja cursar no próximo semestre e, depois que todas estiverem selecionadas, clique em enviar.</p>
+               </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4" data-aos="zoom-in-up" data-aos-duration="1000">
+                <div class="center">
+                     <h3>Passo 2</h3>
+                     <p>O Cronos retorna sua grade horária otimizada. Avalie se ela está boa para você clicando nos botões "sim" ou "não". Sua avaliação ajuda a treinar o Cronos para que ele fique cada vez mais preciso!</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4" data-aos="zoom-in-up" data-aos-duration="1500">
+                <div class="right">
+                     <h3>Passo 3</h3>
+                     <p>Caso não tenha gostado da grade, selecione os motivos. Seu representante discente receberá os resultados de forma anônima.</p>
+                </div>
+            </div>
+          </div>
        </div>
-       <div class="collapse navbar-collapse" id="myNavbar">
-         <ul class="nav navbar-nav navbar-right">
-          <li> <button id="login-button" type="submit">Bem vindo! @Professor x</button> </li>
-
-         </ul>
-       </div>
-     </div>
-    <!-- conainer Ended-->
-   </nav>
-   <!-- Navbar section Ended -->
-</header>
-
-
-<section class="main-contant">
-  <!-- conainer Start -->
-
-
-<!-- conainer Ended -->
-</section>
-
-<section class="prof_horario">
-   <div class="container-fluid">
-    <!-- Portfolio Gallery Grid Start-->
-        <!-- Row-1 Start -->
+      </section>
+      <div style="padding-top: 30px;">
+        <table style="width: 800px; text-align: center;" class = "tabela_grade">
+         <thead style="width: 800px; text-align: center;">
+            <tr>
+               <th>Inicio</th>
+               <th>Fim</th>
+               <th>Seg</th>
+               <th>Ter</th>
+               <th>Qua</th>
+               <th>Qui</th>
+               <th>Sex</th>
+               <th>Sab</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>7:30</td>
+               <td>09:10</td>
+               <td id="1">&nbsp; <input checked type="checkbox"></td>
+               <td id="2">&nbsp; <input checked type="checkbox"></td>
+               <td id="3">&nbsp; <input checked type="checkbox"></td>
+               <td id="4">&nbsp; <input checked type="checkbox"></td>
+               <td id="5">&nbsp; <input checked type="checkbox"></td>
+               <td id="6">&nbsp; <input type="checkbox"></td>
+            </tr>
+            <tr>
+               <td>9:20</td>
+               <td>11:00</td>
+               <td id="7">&nbsp; <input checked type="checkbox"></td>
+               <td id="8">&nbsp; <input checked type="checkbox"></td>
+               <td id="9">&nbsp; <input checked type="checkbox"></td>
+               <td id="10">&nbsp; <input checked type="checkbox"></td>
+               <td id="11">&nbsp; <input checked type="checkbox"></td>
+               <td id="12">&nbsp; <input type="checkbox"></td>
+            </tr>
+            <tr>
+               <td>11:10</td>
+               <td>12:50</td>
+               <td id="13">&nbsp; <input type="checkbox"></td>
+               <td id="14">&nbsp; <input type="checkbox"></td>
+               <td id="15">&nbsp; <input type="checkbox"></td>
+               <td id="16">&nbsp; <input type="checkbox"></td>
+               <td id="17">&nbsp; <input type="checkbox"></td>
+               <td id="18">&nbsp; <input type="checkbox"></td>
+            </tr>
+            <tr>
+               <td>13:10</td>
+               <td>14:50</td>
+               <td id="19">&nbsp; <input checked type="checkbox"></td>
+               <td id="20">&nbsp; <input checked type="checkbox"></td>
+               <td id="21">&nbsp; <input checked type="checkbox"></td>
+               <td id="22">&nbsp; <input checked type="checkbox"></td>
+               <td id="23">&nbsp; <input checked type="checkbox"></td>
+               <td id="24">&nbsp; <input type="checkbox"></td>
+            </tr>
+            <tr>
+               <td>15:00</td>
+               <td>16:40</td>
+               <td id="25">&nbsp; <input checked type="checkbox"></td>
+               <td id="26">&nbsp; <input checked type="checkbox"></td>
+               <td id="27">&nbsp; <input checked type="checkbox"></td>
+               <td id="28">&nbsp; <input checked type="checkbox"></td>
+               <td id="29">&nbsp; <input checked type="checkbox"></td>
+               <td id="30">&nbsp; <input type="checkbox"></td>
+            </tr>
+            <tr>
+               <td>16:50</td>
+               <td>18:30</td>
+               <td id="31">&nbsp; <input type="checkbox"></td>
+               <td id="32">&nbsp; <input type="checkbox"></td>
+               <td id="33">&nbsp; <input type="checkbox"></td>
+               <td id="34">&nbsp; <input type="checkbox"></td>
+               <td id="35">&nbsp; <input type="checkbox"></td>
+               <td id="36">&nbsp; <input type="checkbox"></td>
+            </tr>
+         </tbody>
+      </table>
+    </div>
+      <!-- DivTable.com -->
       </div>
+      <form class="buttonHolder" id="botao_disponibilidade" style="padding-top: 10px;">
+         <button type="button" class="btn btn-default" data-dismiss="modal">Enviar</button>
+         <p><br</p>
+      </form>
+      <div class="modal-footer"></div>
+      </div>
+      </div>
+      </div>
+      </section>
+      <!-- Grade - FIM -->
+      <!-- END MAIN -->
+      <!-- Portfolio Section Ended -->
+      <!-- Footer Section Start -->
+      <footer class="container-fluid bg-4 text-center">
+         <p>(C) 2018, All Rights REserved <span><a href="https://www.template.net/editable/websites" target="_blank">ATTItheme</a></span>. Designed by <span><a href="https://www.template.net/editable/websites" target="_blank">template.net</a></span></p>
+         <a href="index.html"><img src="images/cronos_logo.png" alt="footer-logo"></a>
+         </div>
+      </footer>
+      <!-- Footer Section Ended -->
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Javascript plugins -->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/animate.js"></script>
+      <script src="js/jquery_prof.js"></script>
+      <script>
+         // Animate onscroll
+         $(document).ready(function () {
+         if (screen.width > 1024) {
+         AOS.init({
+         easing: 'ease-in-out-sine',
+         });
+         }
+         });
 
-      <div class="ui-jqgrid-view" id="gview_tableGradeHoraria" style="width: 1027px;">
-	<div class="ui-jqgrid-titlebar ui-widget-header ui-corner-top ui-helper-clearfix">
-		<a role="link" href="javascript:void(0)" class="ui-jqgrid-titlebar-close HeaderButton" style="right: 0px;">
-			<span class="ui-icon ui-icon-circle-triangle-n"></span>
-		</a>
-		<span class="ui-jqgrid-title">Grade Horária</span>
-	</div>
-	<div class="ui-state-default ui-jqgrid-hdiv" style="width: 1027px;">
-		<div class="ui-jqgrid-hbox">
-			<table class="ui-jqgrid-htable" style="width:1027px" role="grid" aria-labelledby="gbox_tableGradeHoraria" cellspacing="0" cellpadding="0" border="0">
-				<thead>
-					<tr role="row" aria-hidden="true" class="jqg-first-row-header" style="height: auto;">
-						<th role="gridcell" class = "celula_grade" class="ui-first-th-ltr" style="height: 0px; width: 123px;"></th>
-						<th role="gridcell" class = "celula_grade" class="ui-first-th-ltr" style="height: 0px; width: 123px;"></th>
-						<th role="gridcell" class = "celula_grade" class="ui-first-th-ltr" style="height: 0px; width: 123px;"></th>
-						<th role="gridcell" class = "celula_grade" class="ui-first-th-ltr" style="height: 0px; width: 123px;"></th>
-						<th role="gridcell" class = "celula_grade" class="ui-first-th-ltr" style="height: 0px; width: 123px;"></th>
-						<th role="gridcell" class = "celula_grade" class="ui-first-th-ltr" style="height: 0px; width: 123px;"></th>
-						<th role="gridcell" class = "celula_grade" class="ui-first-th-ltr" style="height: 0px; width: 123px;"></th>
-						<th role="gridcell" class = "celula_grade" class="ui-first-th-ltr" style="height: 0px; width: 126px;"></th>
-					</tr>
+         // OnScroll
+         function resizeHeaderOnScroll() {
+           const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+           shrinkOn = 00,
+           headerEl = document.getElementById('js-header');
 
-					<tr role="rowheader" class="ui-jqgrid-labels jqg-third-row-header">
-						<th id="tableGradeHoraria_horent" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="">
-							<span class="ui-jqgrid-resize ui-jqgrid-resize-ltr" style="cursor: col-resize;">&nbsp;</span>
-							<div id="jqgh_tableGradeHoraria_horent" class="ui-jqgrid-sortable">Início
-								<span class="s-ico" style="">
-									<span sort="asc" class="ui-grid-ico-sort ui-icon-asc ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span>
-									<span sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span>
-								</span>
-							</div>
-						</th>
-						<th id="tableGradeHoraria_horsai" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="">
-							<span class="ui-jqgrid-resize ui-jqgrid-resize-ltr" style="cursor: col-resize;">&nbsp;</span>
-							<div id="jqgh_tableGradeHoraria_horsai" class="ui-jqgrid-sortable">Fim
-								<span class="s-ico" style="display:none">
-									<span sort="asc" class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span>
-									<span sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span>
-								</span>
-							</div>
-						</th>
-						<th id="tableGradeHoraria_seg" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="">
-							<span class="ui-jqgrid-resize ui-jqgrid-resize-ltr" style="cursor: col-resize;">&nbsp;</span>
-							<div id="jqgh_tableGradeHoraria_seg" class="ui-jqgrid-sortable">Seg
-								<span class="s-ico" style="display:none">
-									<span sort="asc" class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span>
-									<span sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span>
-								</span>
-							</div>
-						</th>
-						<th id="tableGradeHoraria_ter" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="">
-							<span class="ui-jqgrid-resize ui-jqgrid-resize-ltr" style="cursor: col-resize;">&nbsp;</span>
-							<div id="jqgh_tableGradeHoraria_ter" class="ui-jqgrid-sortable">Ter
-								<span class="s-ico" style="display:none">
-									<span sort="asc" class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span>
-									<span sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span>
-								</span>
-							</div>
-						</th>
-						<th id="tableGradeHoraria_qua" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="">
-							<span class="ui-jqgrid-resize ui-jqgrid-resize-ltr" style="cursor: col-resize;">&nbsp;</span>
-							<div id="jqgh_tableGradeHoraria_qua" class="ui-jqgrid-sortable">Qua
-								<span class="s-ico" style="display:none">
-									<span sort="asc" class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span>
-									<span sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span>
-								</span>
-							</div>
-						</th>
-						<th id="tableGradeHoraria_qui" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="">
-							<span class="ui-jqgrid-resize ui-jqgrid-resize-ltr" style="cursor: col-resize;">&nbsp;</span>
-							<div id="jqgh_tableGradeHoraria_qui" class="ui-jqgrid-sortable">Qui
-								<span class="s-ico" style="display:none">
-									<span sort="asc" class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span>
-									<span sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span>
-								</span>
-							</div>
-						</th>
-						<th id="tableGradeHoraria_sex" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="">
-							<span class="ui-jqgrid-resize ui-jqgrid-resize-ltr" style="cursor: col-resize;">&nbsp;</span>
-							<div id="jqgh_tableGradeHoraria_sex" class="ui-jqgrid-sortable">Sex
-								<span class="s-ico" style="display:none">
-									<span sort="asc" class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span>
-									<span sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span>
-								</span>
-							</div>
-						</th>
-						<th id="tableGradeHoraria_sab" role="columnheader" class="ui-state-default ui-th-column ui-th-ltr" style="">
-							<span class="ui-jqgrid-resize ui-jqgrid-resize-ltr" style="cursor: col-resize;">&nbsp;</span>
-							<div id="jqgh_tableGradeHoraria_sab" class="ui-jqgrid-sortable">Sab
-								<span class="s-ico" style="display:none">
-									<span sort="asc" class="ui-grid-ico-sort ui-icon-asc ui-state-disabled ui-icon ui-icon-triangle-1-n ui-sort-ltr"></span>
-									<span sort="desc" class="ui-grid-ico-sort ui-icon-desc ui-state-disabled ui-icon ui-icon-triangle-1-s ui-sort-ltr"></span>
-								</span>
-							</div>
-						</th>
-					</tr>
-				</thead>
-			</table>
-		</div>
-	</div>
-	<div class="ui-jqgrid-bdiv" style="height: 100%; width: 1027px;">
-		<div style="position:relative;">
-			<div></div>
-			<table id="tableGradeHoraria" class="ui-jqgrid-btable" cellpadding="0" cellspacing="0" tabindex="0" border="0" role="grid" aria-multiselectable="false" aria-labelledby="gbox_tableGradeHoraria" style="width: 1027px;">
-				<tbody>
-					<tr class="jqgfirstrow" role="row" style="height:auto">
-						<td role="gridcell" class = "celula_grade" style="height:0px;width:123px;"></td>
-						<td role="gridcell" class = "celula_grade" style="height:0px;width:123px;"></td>
-						<td role="gridcell" class = "celula_grade" style="height:0px;width:123px;"></td>
-						<td role="gridcell" class = "celula_grade" style="height:0px;width:123px;"></td>
-						<td role="gridcell" class = "celula_grade" style="height:0px;width:123px;"></td>
-						<td role="gridcell" class = "celula_grade" style="height:0px;width:123px;"></td>
-						<td role="gridcell" class = "celula_grade" style="height:0px;width:123px;"></td>
-						<td role="gridcell" class = "celula_grade" style="height:0px;width:126px;"></td>
-					</tr>
-					<tr role="row" id="1" tabindex="-1" class="ui-widget-content jqgrow ui-row-ltr">
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="07:30" aria-describedby="tableGradeHoraria_horent">07:30</td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="09:10" aria-describedby="tableGradeHoraria_horsai">09:10</td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_seg"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_ter"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_qua"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_qui"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_sex"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="PTC3530-2018102" aria-describedby="tableGradeHoraria_sab">
-							<div onclick="mostraDisciplina(&quot;PTC3530&quot;)" style="cursor:pointer; margin: 5px; color:#666666">
-								<span class="PTC3530" name="2018102"></span>
-							</div>
-						</td>
-					</tr>
+           if (distanceY > shrinkOn) {
+             headerEl.classList.add("smaller");
+           } else {
+             headerEl.classList.remove("smaller");
+           }
+         }
 
-          <tr role="row" id="16" tabindex="-1" class="ui-widget-content jqgrow ui-row-ltr">
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="09:10" aria-describedby="tableGradeHoraria_horent">9:20</td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="11:00" aria-describedby="tableGradeHoraria_horsai">11:00</td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_seg"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_ter"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_qua"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_qui"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_sex"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="PTC3530-2018102" aria-describedby="tableGradeHoraria_sab">
-							<div onclick="mostraDisciplina(&quot;PTC3530&quot;)" style="cursor:pointer; margin: 5px; color:#666666">
-								<span class="PTC3530" name="2018102"></span>
-							</div>
-						</td>
-					</tr>
-
-					<!-- <tr role="row" id="2" tabindex="-1" class="ui-widget-content jqgrow ui-row-ltr ui-priority-secondary">
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="10:00" aria-describedby="tableGradeHoraria_horent">10:00</td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="11:30" aria-describedby="tableGradeHoraria_horsai">11:30</td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_seg"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="PRG0001-2018102" aria-describedby="tableGradeHoraria_ter">
-							<div onclick="mostraDisciplina(&quot;PRG0001&quot;)" style="cursor:pointer; margin: 5px; color:#658CCF">
-								<span class="PRG0001" name="2018102">PRG0001-2018102</span>
-							</div>
-						</td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_qua"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_qui"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_sex"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_sab"></td>
-					</tr> -->
-					<tr role="row" id="3" tabindex="-1" class="ui-widget-content jqgrow ui-row-ltr">
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="11:00" aria-describedby="tableGradeHoraria_horent">11:10</td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="12:50" aria-describedby="tableGradeHoraria_horsai">12:50</td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_seg"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_ter"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="PTC3413-2018150" aria-describedby="tableGradeHoraria_qua">
-							<div onclick="mostraDisciplina(&quot;PTC3413&quot;)" style="cursor:pointer; margin: 5px; color:#658CCF">
-								<span class="PTC3413" name="2018150"></span>
-							</div>
-						</td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_qui"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="PTC3413-2018150" aria-describedby="tableGradeHoraria_sex">
-							<div onclick="mostraDisciplina(&quot;PTC3413&quot;)" style="cursor:pointer; margin: 5px; color:#658CCF">
-								<span class="PTC3413" name="2018150"></span>
-							</div>
-						</td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_sab"></td>
-					</tr>
-
-          <tr role="row" id="6" tabindex="-1" class="ui-widget-content jqgrow ui-row-ltr ui-priority-secondary">
-            <td role="gridcell" class = "celula_grade" style="text-align:center;" title="13:00" aria-describedby="tableGradeHoraria_horent">13:10</td>
-            <td role="gridcell" class = "celula_grade" style="text-align:center;" title="14:40" aria-describedby="tableGradeHoraria_horsai">14:50</td>
-            <td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_seg"></td>
-            <td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_ter"></td>
-            <td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_qua"></td>
-            <td role="gridcell" class = "celula_grade" style="text-align:center;" title="PTC3418-2018102" aria-describedby="tableGradeHoraria_qui">
-              <div onclick="mostraDisciplina(&quot;PTC3418&quot;)" style="cursor:pointer; margin: 5px; color:#666666">
-                <span class="PTC3418" name="2018102"></span>
-              </div>
-            </td>
-            <td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_sex"></td>
-            <td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_sab"></td>
-          </tr>
-
-          <tr role="row" id="4" tabindex="-1" class="ui-widget-content jqgrow ui-row-ltr ui-priority-secondary">
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="14:00" aria-describedby="tableGradeHoraria_horent">15:00</td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="17:40" aria-describedby="tableGradeHoraria_horsai">16:40</td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_seg"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_ter"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_qua"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" title="PTC3418-2018102" aria-describedby="tableGradeHoraria_qui">
-							<div onclick="mostraDisciplina(&quot;PTC3418&quot;)" style="cursor:pointer; margin: 5px; color:#666666">
-								<span class="PTC3418" name="2018102"></span>
-							</div>
-						</td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_sex"></td>
-						<td role="gridcell" class = "celula_grade" style="text-align:center;" aria-describedby="tableGradeHoraria_sab"></td>
-					</tr>
-
-
-					<tr role="row" id="5" tabindex="-1" class="ui-widget-content jqgrow ui-row-ltr">
-						<td role="gridcell" class = "ultimo1" style="text-align:center;" title="15:00" aria-describedby="tableGradeHoraria_horent">16:50</td>
-						<td role="gridcell" class = "ultimo1" style="text-align:center;" title="18:30" aria-describedby="tableGradeHoraria_horsai">18:30</td>
-						<td role="gridcell" class = "ultimo1" style="text-align:center;" title="PSI3571-2018101" aria-describedby="tableGradeHoraria_seg">
-							<div onclick="mostraDisciplina(&quot;PSI3571&quot;)" style="cursor:pointer; margin: 5px; color:#658CCF">
-								<span class="PSI3571" name="2018101"></span>
-							</div>
-						</td>
-						<td role="gridcell" class = "ultimo1" style="text-align:center; " aria-describedby="tableGradeHoraria_ter"></td>
-						<td role="gridcell" class = "ultimo1" style="text-align:center;" aria-describedby="tableGradeHoraria_qua"></td>
-						<td role="gridcell" class = "ultimo1" style="text-align:center;" aria-describedby="tableGradeHoraria_qui"></td>
-						<td role="gridcell" class = "ultimo1" style="text-align:center;" aria-describedby="tableGradeHoraria_sex"></td>
-						<td role="gridcell" class = "ultimo1" style="text-align:center;" aria-describedby="tableGradeHoraria_sab"></td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-
-	</div>
-  <br><br>
-</div>
-
-</section>
-
-
-
-        <!-- Grade - FIM -->
-
-    <!-- END MAIN -->
-
-<!-- Portfolio Section Ended -->
-
-
-
-
-<!-- Footer Section Start -->
-<footer class="container-fluid bg-4 text-center">
-      <p>(C) 2018, All Rights REserved <span><a href="https://www.template.net/editable/websites" target="_blank">ATTItheme</a></span>. Designed by <span><a href="https://www.template.net/editable/websites" target="_blank">template.net</a></span></p>
-      <a href="index.html"><img src="images/cronos_logo.png" alt="footer-logo"></a>
-  </div>
-</footer>
-<!-- Footer Section Ended -->
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Javascript plugins -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/animate.js"></script>
-
-    <script>
-
-    // Animate onscroll
-    $(document).ready(function () {
-    if (screen.width > 1024) {
-    AOS.init({
-    easing: 'ease-in-out-sine',
-    });
-    }
-    });
-
-    // OnScroll
-    function resizeHeaderOnScroll() {
-      const distanceY = window.pageYOffset || document.documentElement.scrollTop,
-      shrinkOn = 00,
-      headerEl = document.getElementById('js-header');
-
-      if (distanceY > shrinkOn) {
-        headerEl.classList.add("smaller");
-      } else {
-        headerEl.classList.remove("smaller");
-      }
-    }
-
-    window.addEventListener('scroll', resizeHeaderOnScroll);
-    </script>
-
-  </body>
+         window.addEventListener('scroll', resizeHeaderOnScroll);
+      </script>
+   </body>
 </html>
